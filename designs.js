@@ -8,7 +8,7 @@ const sizePicker = $('#sizePicker'),
 let color = 'black';
 
 // When size is submitted by the user, call makeGrid()
- makeGrid = function(width, height) {
+function makeGrid(width, height) {
   let pase;
   for (let r = 0; r < width; r++) {
     pase += `<tr>`;
@@ -20,7 +20,7 @@ let color = 'black';
   pixelCanvas.append(pase);
 }
 
-// new board
+
 let deleteRow = () => {
   let rowSize = $('tr').length;
   while (rowSize--) {
@@ -28,7 +28,7 @@ let deleteRow = () => {
   }
 }
 
-// color
+
 colorPicker.change(() => {
   color = colorPicker.val();
 });
