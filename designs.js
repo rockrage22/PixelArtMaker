@@ -9,21 +9,21 @@ let color = 'black';
 
 // When size is submitted by the user, call makeGrid()
 let makeGrid = (row, column) => {
-  let html;
+  let pase;
   for (let r = 0; r < row; r++) {
-    html += `<tr>`;
+    pase += `<tr>`;
     for (var c = 0; c < column; c++) {
-      html += `<td class="pixel"></td>`
+      pase += `<td class="pixel"></td>`
     }
-    html += `</tr>`;
+    pase += `</tr>`;
   }
-  pixelCanvas.append(html);
+  pixelCanvas.append(pase);
 }
 
 
 let deleteRow = () => {
-  let rowCounter = $('tr').length;
-  while (rowCounter--) {
+  let rowSize = $('tr').length;
+  while (rowSize--) {
     document.getElementById('pixelCanvas').deleteRow(-1);
   }
 }
