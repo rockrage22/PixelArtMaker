@@ -8,15 +8,6 @@ const sizePicker = $('#sizePicker'),
 let color = 'black';
 
 // When size is submitted by the user, call makeGrid()
-const sizePicker = $('#sizePicker'),
-      inputHeight = $('#inputHeight'),
-      inputWidth = $('#inputWidth'),
-      // Select size input
-      colorPicker = $('#colorPicker'),
-      pixelCanvas = $('#pixelCanvas');
-let color = 'black';
-
-
 let makeGrid = (row, column) => {
   let html;
   for (let r = 0; r < row; r++) {
