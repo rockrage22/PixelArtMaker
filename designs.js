@@ -8,11 +8,11 @@ const sizePicker = $('#sizePicker'),
 let color = 'black';
 
 // When size is submitted by the user, call makeGrid()
-let makeGrid = (row, column) => {
+ makeGrid = function(width, height) {
   let pase;
-  for (let r = 0; r < row; r++) {
+  for (let r = 0; r < width; r++) {
     pase += `<tr>`;
-    for (var c = 0; c < column; c++) {
+    for (var c = 0; c < height; c++) {
       pase += `<td class="pixel"></td>`
     }
     pase += `</tr>`;
