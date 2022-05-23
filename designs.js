@@ -20,7 +20,7 @@ let makeGrid = (row, column) => {
   pixelCanvas.append(pase);
 }
 
-
+// new board
 let deleteRow = () => {
   let rowSize = $('tr').length;
   while (rowSize--) {
@@ -28,6 +28,7 @@ let deleteRow = () => {
   }
 }
 
+// color
 colorPicker.change(() => {
   color = colorPicker.val();
 });
